@@ -170,6 +170,27 @@ source ~/.zshrc
 ```
 此时便有了命令提示的功能
 
+autojump插件的安装
+
+该插件可以让你只输入j+目录名的一部分即可跳转到指定目录，不用再cd那一大串了。
+首先我们下载
+```
+git clone https://github.com/wting/autojump.git
+cd autojump
+./install.sh
+```  
+之后会提示你如下信息,其中最后的内容是
+```
+Please manually add the following line(s) to ~/.zshrc:
+
+   [[ -s /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh ]] && source /data/data/com.termux/files/home/.autojump/etc/profile.d/autojump.sh
+
+   autoload -U compinit && compinit -u
+
+Please restart terminal(s) before running autojump.
+```
+把第2，3行的内容复制到zshrc文件中，然后编译即可。
+
 ### 5. 运行Python程序
 
 要运行Python程序，请打开Termux并输入以下命令：
