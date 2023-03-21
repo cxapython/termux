@@ -32,8 +32,6 @@ More:更多
    └── Help:                   # 帮助文档
 ```
 
-#### 
-
 #### 更新源
 
 最新的termux，可以通过命令修改源为国内的源加快下载速度,
@@ -153,7 +151,24 @@ ZSH_THEME="agnoster"
 source ~/.zshrc
 ```
 
-
+然后安装命令提示的插件
+```
+cd /data/data/com.termux/files/home/.oh-my-zsh/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+```
+然后修改zshrc
+```
+plugins=(git)
+```
+为
+```
+plugins=(zsh-autosuggestions git)
+```
+之后重新编辑
+```
+source ~/.zshrc
+```
+此时便有了命令提示的功能
 
 ### 5. 运行Python程序
 
