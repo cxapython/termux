@@ -177,7 +177,7 @@ autojump插件的安装
 ```
 git clone https://github.com/wting/autojump.git
 cd autojump
-./install.sh
+./install.py
 ```  
 之后会提示你如下信息,其中最后的内容是
 ```
@@ -200,6 +200,7 @@ cd进入程序的路径下面默认路径在这里`/data/data/com.termux/files/h
 gpt.py的路径要对
 
 ```
+cd ChatGPT4
 python gpt.py
 ```
 
